@@ -22,7 +22,7 @@ on:
         default: ''
 
 env:
-  TOKEN_KIDDIN9: ${{ secrets.TOKEN_KIDDIN9 }}
+  TOKEN_KIDDIN9: ${{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}}
   TZ: Asia/Shanghai
 
 jobs:
@@ -37,7 +37,7 @@ jobs:
       if: contains(github.event.inputs.param, 'cw')
       with:
         workflow_id: all
-        access_token: ${{ github.token }}
+        access_token: ${{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}}
 
     - name: Load Settings.ini
       run: |
